@@ -1,5 +1,7 @@
 function WowScroller(_debug){
     /*
+        Author: Douglas Saisho
+
         USAGE:
 
         const wowScroller = new WowScroller();
@@ -27,7 +29,7 @@ function WowScroller(_debug){
 
         _sceneOptions = { triggerHook: "onLeave", duration: "100%", offset:-595}
             -OBJECT containing scene options that will be applied to all tweens
-
+                -if 'override' key is provided for a tween, the override options will be applied to that tween onlyy
         _tweens = {
                     '#pinned-element1 .image':{scale:'1'},
                     '.hero .content h1':{x: 300,autoAlpha:0},
@@ -35,15 +37,16 @@ function WowScroller(_debug){
                 }
             -OBJECT containing tweens that will run in parallel with the trigger element. object pattern:
             {
-                'element selector for tween'              : {tweenProperty:'value'},
-                'a different element selector for tween'  : {tweenProperty:'value'},
-                'element selector for tween'              : {tweenProperty:'value'}
+                'element selector for tween'                              : {tweenProperty:'value'},
+                'a different element selector for tween'                  : {tweenProperty:'value'},
+                'element selector for tween with custom scene options'    : {tween:{tweenProperty:'value'},override:{offset:400}}
             }
         
             OR
 
-        _tweens = {timeline}
+        _tweens = {timeline} ||  _tweens = {timeline, override:{offset:-200}}
             -OBJECT containing a TimelineMax animation
+                -if override is provided, override scene options will appply to that scene
     */
     const controller = new ScrollMagic.Controller();
     let debug = _debug;
@@ -52,7 +55,7 @@ function WowScroller(_debug){
         let tween;
         if(_tweenTarget == 'timeline'){
             tween = _tweens[_tweenTarget]
-        }               
+        }            
         else if('tween' in _tweens[_tweenTarget]){
             tween = TweenMax.to(_tweenTarget, 1, _tweens[_tweenTarget].tween)
         }
