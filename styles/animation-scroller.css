@@ -18,7 +18,7 @@ body.debug .debug-info {
 
 .container {
   width: 100vw;
-  background-color: red; }
+  background-color: black; }
 
 .container .animation-area {
   background-image: url("../assets/beach.jpg");
