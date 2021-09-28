@@ -1,3 +1,6 @@
+html {
+  height: 100%; }
+
 .debug-info {
   display: none; }
 
@@ -9,7 +12,9 @@ body.debug .scene {
   border: green solid thin; }
 
 body.debug .debug-info {
-  display: block; }
+  display: block;
+  color: red;
+  position: absolute; }
 
 .container {
   width: 100vw;
@@ -27,6 +32,42 @@ body.debug .debug-info {
   position: absolute;
   background-size: contain;
   background-position: center; }
+
+.container .animation-area .scene-element.landing-page {
+  width: 100%;
+  height: 100vh;
+  background-color: #000; }
+
+.container .animation-area .scene-element.landing-page .img-bg {
+  background-image: url("../assets/history.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: black; }
+
+.container .animation-area .scene-element.landing-page .landing-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center; }
+
+.container .animation-area .scene-element.landing-page .landing-content .landing-title {
+  min-width: 300px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  line-height: .1; }
+
+.container .animation-area .scene-element.landing-page .landing-content .landing-title p {
+  text-shadow: 2px 2px #000; }
+
+.container .animation-area .scene-element.landing-page .landing-content .landing-title .note {
+  font-size: 12px;
+  font-weight: normal; }
 
 .container .animation-area .scene-element.plane {
   width: 135px;
