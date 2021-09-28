@@ -1,7 +1,7 @@
 const AnimationScroller = (() => {
     'use strict';
     console.log("%c-----------------------------------------------------------------------------------------------------------------------------------","color:transparent; font-size:50px; font-weight:bold; background-image:url('https://canary.contestimg.wish.com/api/webimage/5b0e1d5dcab48a6c7f40fd62-large.jpg?cache_buster=d017fac4d7d74f84b9dfdd2815aec6c7');background-size:contain;")
-    console.log("%cBANZAI BITCH!!! -suicide squad gang", "font-size:50px; color:red;text-align:center;width:100%;")
+    console.log("%cBANZAI BITCH!!! -suicide gang", "font-size:50px; color:red;text-align:center;width:100%;")
     const wowScroller = new WowScroller(false);
 
     const init = () => {
