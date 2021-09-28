@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://scrollmagic.io/assets/js/lib/modernizr.custom.min.js"></script>
+    <script type="text/javascript" src="https://scrollmagic.io/scrollmagic/uncompressed/ScrollMagic.js"></script>
+    <script type="text/javascript" src="https://scrollmagic.io/scrollmagic/uncompressed/plugins/animation.gsap.js">
+    </script>
+    <script type="text/javascript" src="https://scrollmagic.io/scrollmagic/uncompressed/plugins/debug.addIndicators.js">
+    </script>
+    <style>
+        /*
+	Demo Styles: NOT REQUIRED
+*/
+        html,
+        body {
+            margin: 0;
+            height: 100%
+        }
+
+        h1,
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            width: 100%;
+            background-color: yellow;
+            height: 50px;
+            position: fixed;
+            top:0;
+            z-index: 99;
+        }
+
+        section {
+            text-align: center;
+            color: #EFEFEF;
+        }
+        .main{
+
+        }
+        .circle-module {
+            height: 545px;
+            background-color: white;
+            padding: 50px 0;
+            position: relative;
+        }
+
+        .item-container {
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            width: 870px;
+        }
+
+        .circle-item {
+            display: flex;
+            justify-content: center;
+            min-width: 150px;
+            height: 150px;
+            background-color: white;
+            flex-direction: column;
+            text-align: center;
+            margin-right: 58px;
+            margin-top: 24px;
+            align-items: center;
+
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .circle-image {
+            width: 80%;
+            height: 80%;
+            border-radius: 50%;
+            background-color: white;
+            background-image: url('https://picsum.photos/200');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .muffler {
+            background-color: white;
+        }
+        .muffler .circle-item{
+            background-color:transparent;
+        }
+
+        .parts {
+            background-color: white;
+        }
+
+        .hero {
+            height: 545px;
+            background-color: white;
+            position: fixed;
+            top: 50px;
+            width: 100%;
+            height: 545px;
+            overflow: hidden;
+        }
+        .hero .content{
+            position: absolute;
+            top: 0px;
+            margin: 0 auto;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            min-height: 545px;
+            justify-content: center;
+            color: #f00;
+            max-width: 500px;
+        }
+        .hero .content-wrapper{
+            display: flex;
+            justify-content: center;
+        }
+
+        .hero .image {
+            background-image: url('https://picsum.photos/2000/595');
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100%;
+        }
+        .first{
+            margin-top:594px;
+        }
+        .rfr-section{
+            background-color: transparent;
+            height: 200px;
+        }
+        .rfr{
+            position: fixed;
+    top: calc(50% - 50px);
+    margin: 0 auto;
+    width: 100%;
+        }
+        .rfr-banner{
+            background-image: url(assets/rfr.jpg);
+    background-size: contain;
+    width: 977px;
+    height: 107px;
+    margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header role="banner">
+        <h1>MERGLER FLAUW</h1>
+    </header>
+
+    <main class="main" role="main">
+        <div class="hero delay"id="pinned-element1" >
+            <div class="image">
+            </div>
+            <div class="content-wrapper">
+                <div class="content">
+                    <h1>cool product</h1>
+                    <p>this is a description of some product that makes your car make noises</p>
+                </div>
+            </div>
+        </div>
+        <div class="rfr">
+            <div class="rfr-banner">
+
+            </div>
+        </div>
+        <div class="circle-module first exhaust">
+            <div class="module-container">
+                <h1>Performaink exfost</h1>
+                <div class="item-container">
+                    <div class="circle-item">
+                        <div class="circle-image"></div>
+                        <p>circle text</p>
+                    </div>
+                    <div class="circle-item">
+                        <div class="circle-image"></div>
+                        <p>circle text</p>
+                    </div>
+                    <div class="circle-item">
+                        <div class="circle-image"></div>
+                        <p>circle text</p>
+                    </div>
+                    <div class="circle-item">
+                        <div class="circle-image"></div>
+                        <p>circle text</p>
+                    </div>
+                    <div class="circle-item">
+                        <div class="circle-image"></div>
+                        <p>circle text</p>
+                    </div>
+                    <div class="circle-item">
+                        <div class="circle-image"></div>
+                        <p>circle text</p>
+                    </div>
+                    <div class="circle-item">
+                        <div class="circle-image"></div>
+                        <p>circle text</p>
+                    </div>
+                    <div class="circle-item">
+                        <div class="circle-image"></div>
+                        <p>circle text</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="circle-module muffler">
+            <div class="module-container">
+                <h1>Performaink mflr</h1>
+                <div class="item-container">
+                    <div class="circle-item">
+                        <div class="circle-image"></div>
+                        <p>circle text</p>
+                    </div>
+                    <div class="circle-item">
+                        <div class="circle-image"></div>
+                        <p>circle text</p>
+                    </div>
+                    <div class="circle-item">
+                        <div class="circle-image"></div>
+                        <p>circle text</p>
+                    </div>
+                    <div class="circle-item">
+                        <div class="circle-image"></div>
+                        <p>circle text</p>
+                    </div>
+                    <div class="circle-item">
+                        <div class="circle-image"></div>
+                        <p>circle text</p>
+                    </div>
+                    <div class="circle-item">
+                        <div class="circle-image"></div>
+                        <p>circle text</p>
+                    </div>
+                    <div class="circle-item">
+                        <div class="circle-image"></div>
+                        <p>circle text</p>
+                    </div>
+                    <div class="circle-item">
+                        <div class="circle-image"></div>
+                        <p>circle text</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="circle-module parts">
+            <div class="module-container">
+                <h1>Performaink mflr</h1>
+                <div class="item-container">
+                    <div class="circle-item">
+                        <div class="circle-image"></div>
+                        <p>circle text</p>
+                    </div>
+                    <div class="circle-item">
+                        <div class="circle-image"></div>
+                        <p>circle text</p>
+                    </div>
+                    <div class="circle-item">
+                        <div class="circle-image"></div>
+                        <p>circle text</p>
+                    </div>
+                    <div class="circle-item">
+                        <div class="circle-image"></div>
+                        <p>circle text</p>
+                    </div>
+                    <div class="circle-item">
+                        <div class="circle-image"></div>
+                        <p>circle text</p>
+                    </div>
+                    <div class="circle-item">
+                        <div class="circle-image"></div>
+                        <p>circle text</p>
+                    </div>
+                    <div class="circle-item">
+                        <div class="circle-image"></div>
+                        <p>circle text</p>
+                    </div>
+                    <div class="circle-item">
+                        <div class="circle-image"></div>
+                        <p>circle text</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="circle-module rfr-section">
+            <div class="module-container">
+                <div class="item-container">
+                   
+                </div>
+            </div>
+        </div>
+        <div class="circle-module sponsers">
+            <div class="module-container">
+                <h1>Performaink Sponsers</h1>
+                <div class="item-container">
+                    <div class="circle-item">
+                        <div class="circle-image"></div>
+                        <p>circle text</p>
+                    </div>
+                    <div class="circle-item">
+                        <div class="circle-image"></div>
+                        <p>circle text</p>
+                    </div>
+                    <div class="circle-item">
+                        <div class="circle-image"></div>
+                        <p>circle text</p>
+                    </div>
+                    <div class="circle-item">
+                        <div class="circle-image"></div>
+                        <p>circle text</p>
+                    </div>
+                    <div class="circle-item">
+                        <div class="circle-image"></div>
+                        <p>circle text</p>
+                    </div>
+                    <div class="circle-item">
+                        <div class="circle-image"></div>
+                        <p>circle text</p>
+                    </div>
+                    <div class="circle-item">
+                        <div class="circle-image"></div>
+                        <p>circle text</p>
+                    </div>
+                    <div class="circle-item">
+                        <div class="circle-image"></div>
+                        <p>circle text</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../WowScroller/WowScroller.js"></script>
+<script src="./js/HomepageScroller.js"></script>
+    <script>
+        HomepageScroller.init();
+
+    </script>
+
+</body>
+
+</html>

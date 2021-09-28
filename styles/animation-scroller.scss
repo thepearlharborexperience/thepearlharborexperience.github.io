@@ -1,0 +1,88 @@
+.debug-info{
+    display: none;
+}
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    &.debug{
+        .scene{
+            border: green solid thin;
+        }
+        .debug-info{
+            display:block;
+        }
+    }
+}
+.container {
+    width: 100vw;
+    background-color: red;
+
+    
+    .animation-area {
+        background-image: url("../assets/beach.jpg");
+        background-size: cover;
+        background-position: center;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        .scene-element {
+            position: absolute;
+            background-size: contain;
+            background-position: center;
+            &.plane {
+                width: 135px;
+                height: 113px;
+                background-image: url('../assets/plane.png');
+        
+            }
+            &.ship {
+
+                background-image: url('../assets/ship.png');
+                width: 800px;
+                height: 203px;
+                bottom: 50px;
+                left: calc(50% - 400px);
+                transform: rotate(4deg);
+            }
+            &.explosion {
+
+                background-image: url('../assets/explosion.png');
+                width: 830px;
+                height: 941px;
+                bottom: -315px;
+                left: calc(50% - 415px);
+            }
+            &.victory{
+                width: 100%;
+                height: 100vh;
+                filter: drop-shadow(30px 10px 20px #000);
+                display: flex;
+                justify-content: center;
+                .img{
+                    width: 100%;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-image:url('../assets/victory.png')
+                }
+            }
+        }
+
+    }
+
+
+    .scene {
+        margin: 0 auto;
+        width: 80%;
+        background-color: transparent;
+        
+        height: 100vh;
+        display: block;
+        position: relative;
+
+        &.scene1 {
+            height: 100vh;
+
+        }
+    }
+}
